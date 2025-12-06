@@ -1,10 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Layout Template</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-$END$
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <h1>CodeWay</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Welcome to CodeWay</h2>
+                    <p>A simple and clean layout template for your web projects</p>
+                    <button class="btn btn-primary">Get Started</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About</h2>
+                <p>This is a simple, responsive layout template that you can use as a starting point for your web development projects. It includes modern HTML5 structure, clean CSS styling, and responsive design principles.</p>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2>Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Web Development</h3>
+                        <p>Modern, responsive websites built with the latest technologies.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>UI/UX Design</h3>
+                        <p>Beautiful and intuitive user interfaces that enhance user experience.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Consulting</h3>
+                        <p>Expert advice on technology choices and project architecture.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Get in touch with us for your next project.</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 CodeWay. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
